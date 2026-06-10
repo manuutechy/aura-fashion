@@ -31,11 +31,11 @@ export function Home() {
 
   // -- Explore Categories State --
   const exploreCategories = [
-    { title: "Dresses", img: "https://images.unsplash.com/photo-1595777457583-95e059d581b8?auto=format&fit=crop&q=80&w=600" },
-    { title: "Tops", img: "https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?auto=format&fit=crop&q=80&w=600" },
-    { title: "Knitwear", img: "https://images.unsplash.com/photo-1608063615781-e2ef8c73d114?auto=format&fit=crop&q=80&w=600" },
-    { title: "Accessories", img: "https://images.unsplash.com/photo-1535632066927-ab7c9ab60908?auto=format&fit=crop&q=80&w=600" },
-    { title: "Beauty", img: "https://images.unsplash.com/photo-1608248597279-f99d160bfcbc?auto=format&fit=crop&q=80&w=600" }
+    { title: "Dresses", img: "https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?auto=format&fit=crop&q=80&w=600" },
+    { title: "Tops", img: "https://images.unsplash.com/photo-1531123897727-8f129e1688ce?auto=format&fit=crop&q=80&w=600" },
+    { title: "Knitwear", img: "https://images.unsplash.com/photo-1485230405346-71acb9518d9c?auto=format&fit=crop&q=80&w=600" },
+    { title: "Accessories", img: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&q=80&w=600" },
+    { title: "Beauty", img: "https://images.unsplash.com/photo-1581044777550-4cfa60707c03?auto=format&fit=crop&q=80&w=600" }
   ];
   const [activeExploreCat, setActiveExploreCat] = useState(exploreCategories[0].title);
   
@@ -89,33 +89,33 @@ export function Home() {
 
   const socialProof = [
     {
-      image: "https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?auto=format&fit=crop&q=80&w=200",
+      image: "https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?auto=format&fit=crop&q=80&w=200",
       quote: "The fit is absolutely incredible. Finally, a brand that understands a woman's body.",
       author: "Sarah J."
     },
     {
-      image: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&q=80&w=200",
+      image: "https://images.unsplash.com/photo-1496747611176-843222e1e57c?auto=format&fit=crop&q=80&w=200",
       quote: "These are the most flattering staples I own. Vibrant and incredibly rich.",
       author: "Michelle K."
     },
     {
-      image: "https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&q=80&w=200",
+      image: "https://images.unsplash.com/photo-1509631179647-0177331693ae?auto=format&fit=crop&q=80&w=200",
       quote: "I live in these tops. The fabric quality is unmatched for the price point.",
       author: "Amanda R."
     },
     {
-      image: "https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?auto=format&fit=crop&q=80&w=200",
+      image: "https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&q=80&w=200",
       quote: "Every piece feels custom made. I get compliments whenever I wear Aura.",
       author: "Jessica T."
     }
   ];
 
   const instagramImages = [
-    "https://images.unsplash.com/photo-1550614000-4b95d4ed79d1?auto=format&fit=crop&q=80&w=400",
-    "https://images.unsplash.com/photo-1496747611176-843222e1e57c?auto=format&fit=crop&q=80&w=400",
-    "https://images.unsplash.com/photo-1509631179647-0177331693ae?auto=format&fit=crop&q=80&w=400",
-    "https://images.unsplash.com/photo-1572804013309-59a88b7e92f1?auto=format&fit=crop&q=80&w=400",
-    "https://images.unsplash.com/photo-1581044777550-4cfa60707c03?auto=format&fit=crop&q=80&w=400"
+    "https://images.unsplash.com/photo-1489424731084-a5d8b219a5bb?auto=format&fit=crop&q=80&w=400",
+    "https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?auto=format&fit=crop&q=80&w=400",
+    "https://images.unsplash.com/photo-1531123897727-8f129e1688ce?auto=format&fit=crop&q=80&w=400",
+    "https://images.unsplash.com/photo-1485230405346-71acb9518d9c?auto=format&fit=crop&q=80&w=400",
+    "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&q=80&w=400"
   ];
 
   return (
@@ -330,7 +330,7 @@ export function Home() {
           </div>
           <div className="h-64 md:h-auto relative overflow-hidden group">
             <img 
-              src="https://images.unsplash.com/photo-1550614000-4b95d4ed79d1?auto=format&fit=crop&q=80&w=1000" 
+              src="https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?auto=format&fit=crop&q=80&w=1000" 
               alt="Smart Casual Style" 
               className="absolute inset-0 w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-1000"
             />
