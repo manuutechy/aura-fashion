@@ -31,11 +31,11 @@ export function Home() {
 
   // -- Explore Categories State --
   const exploreCategories = [
-    { title: "Dresses", img: "https://images.unsplash.com/photo-1595777457583-95e059d581b8?auto=format&fit=crop&q=80&w=600" },
-    { title: "Tops", img: "https://images.unsplash.com/photo-1508214751196-bcfd4ca60f91?auto=format&fit=crop&q=80&w=600" },
-    { title: "Knitwear", img: "https://images.unsplash.com/photo-1574169208507-84376144848b?auto=format&fit=crop&q=80&w=600" },
-    { title: "Accessories", img: "https://images.unsplash.com/photo-1611591437281-460bfbe1220a?auto=format&fit=crop&q=80&w=600" },
-    { title: "Beauty", img: "https://images.unsplash.com/photo-1601049541289-9b1b7bbbfe19?auto=format&fit=crop&q=80&w=600" }
+    { title: "Dresses", img: "/images/cat-dresses.jpg" },
+    { title: "Tops", img: "/images/cat-tops.jpg" },
+    { title: "Knitwear", img: "/images/cat-knitwear.jpg" },
+    { title: "Accessories", img: "/images/cat-accessories.jpg" },
+    { title: "Beauty", img: "/images/cat-beauty.jpg" }
   ];
   const [activeExploreCat, setActiveExploreCat] = useState(exploreCategories[0].title);
   
@@ -89,33 +89,33 @@ export function Home() {
 
   const socialProof = [
     {
-      image: "https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?auto=format&fit=crop&q=80&w=200",
+      image: "/images/review-1.jpg",
       quote: "The fit is absolutely incredible. Finally, a brand that understands a woman's body.",
       author: "Sarah J."
     },
     {
-      image: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&q=80&w=200",
+      image: "/images/review-2.jpg",
       quote: "These are the most flattering staples I own. Vibrant and incredibly rich.",
       author: "Michelle K."
     },
     {
-      image: "https://images.unsplash.com/photo-1509631179647-0177331693ae?auto=format&fit=crop&q=80&w=200",
+      image: "/images/review-3.jpg",
       quote: "I live in these tops. The fabric quality is unmatched for the price point.",
       author: "Amanda R."
     },
     {
-      image: "https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&q=80&w=200",
+      image: "/images/review-4.jpg",
       quote: "Every piece feels custom made. I get compliments whenever I wear Aura.",
       author: "Jessica T."
     }
   ];
 
   const instagramImages = [
-    "https://images.unsplash.com/photo-1489424731084-a5d8b219a5bb?auto=format&fit=crop&q=80&w=400",
-    "https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?auto=format&fit=crop&q=80&w=400",
-    "https://images.unsplash.com/photo-1531123897727-8f129e1688ce?auto=format&fit=crop&q=80&w=400",
-    "https://images.unsplash.com/photo-1485230405346-71acb9518d9c?auto=format&fit=crop&q=80&w=400",
-    "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&q=80&w=400"
+    "/images/instagram-1.jpg",
+    "/images/instagram-2.jpg",
+    "/images/instagram-3.jpg",
+    "/images/instagram-4.jpg",
+    "/images/instagram-5.jpg"
   ];
 
   return (
@@ -146,7 +146,7 @@ export function Home() {
             initial={{ opacity: 0, scale: 1.05 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.8 }}
-            src="https://images.unsplash.com/photo-1488426862026-3ee34a7d66df?auto=format&fit=crop&q=80&w=1200"
+            src="/images/hero.jpg"
             alt="Aura Fashion Model"
             className="absolute inset-0 w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-[2000ms]"
           />
@@ -330,7 +330,7 @@ export function Home() {
           </div>
           <div className="h-64 md:h-auto relative overflow-hidden group">
             <img 
-              src="https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?auto=format&fit=crop&q=80&w=1000" 
+              src="/images/smart-casual.jpg" 
               alt="Smart Casual Style" 
               className="absolute inset-0 w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-1000"
             />
