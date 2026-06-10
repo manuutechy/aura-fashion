@@ -56,7 +56,7 @@ export function OurStory() {
             className="lg:col-span-5 bg-bg-secondary aspect-[4/5] overflow-hidden"
           >
             <img
-              src="https://images.unsplash.com/photo-1581044777550-4cfa60707c03?auto=format&fit=crop&q=80&w=800"
+              src="https://images.unsplash.com/photo-1509319117193-57bab727e09d?auto=format&fit=crop&q=80&w=800"
               alt="Linen creation process"
               className="w-full h-full object-cover transform hover:scale-103 transition-transform duration-700"
             />
@@ -69,7 +69,7 @@ export function OurStory() {
           {/* Image */}
           <div className="aspect-[16/10] overflow-hidden">
             <img
-              src="https://images.unsplash.com/photo-1516026672322-bc52d61a55d5?auto=format&fit=crop&q=80&w=800"
+              src="https://images.unsplash.com/photo-1535632066927-ab7c9ab60908?auto=format&fit=crop&q=80&w=800"
               alt="Artisan workspace"
               className="w-full h-full object-cover"
             />
