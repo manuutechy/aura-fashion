@@ -202,7 +202,7 @@ export function Home() {
               onClick={() => setActiveExploreCat(cat.title)}
               className={`group relative overflow-hidden aspect-[16/9] md:aspect-[4/3] bg-bg-secondary flex items-end justify-center rounded-2xl shadow-sm border transition-all duration-300 ${activeExploreCat === cat.title ? 'border-accent-primary ring-2 ring-accent-primary/20 scale-[1.05] shadow-lg shadow-accent-primary/20 z-10' : 'border-black/5 hover:border-black/20'}`}
             >
-              <img src={cat.img} alt={cat.title} className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" />
+              <img src={cat.img} alt={cat.title} className="absolute inset-0 w-full h-full object-cover object-top transition-transform duration-700 group-hover:scale-110" />
               <div className={`absolute inset-0 transition-opacity duration-300 ${activeExploreCat === cat.title ? 'bg-gradient-to-t from-black/80 via-black/20 to-transparent' : 'bg-black/60 group-hover:bg-black/40'}`} />
               <div className="relative z-10 w-full p-3 text-center">
                 <h3 className="text-white text-sm md:text-base font-bold uppercase tracking-widest">{cat.title}</h3>
@@ -248,7 +248,7 @@ export function Home() {
       <section className="py-16 px-6 max-w-[90rem] mx-auto w-full mb-16">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center bg-bg-secondary rounded-3xl shadow-sm border border-black/5 overflow-hidden group">
           <div className="aspect-square md:aspect-auto md:h-full relative overflow-hidden">
-            <img src={featuredItem?.images[0]} alt={featuredItem?.name} className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-1000" />
+            <img src={featuredItem?.images[0]} alt={featuredItem?.name} className="absolute inset-0 w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-1000" />
             <div className="absolute top-6 left-6 bg-white/90 backdrop-blur-sm px-4 py-2 rounded-full shadow-sm text-xs font-bold uppercase tracking-wider text-black">Aura Signature</div>
           </div>
           <div className="p-8 md:p-12 lg:p-20 flex flex-col justify-center">
@@ -419,7 +419,7 @@ export function Home() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6">
             {socialProof.map((proof, idx) => (
               <div key={idx} className="bg-white p-5 rounded-2xl shadow-sm border border-black/5 flex items-center gap-5 hover:shadow-md transition-shadow duration-300">
-                <img src={proof.image} alt={proof.author} className="w-16 h-16 rounded-full object-cover flex-shrink-0" />
+                <img src={proof.image} alt={proof.author} className="w-16 h-16 rounded-full object-cover object-center flex-shrink-0" />
                 <div className="flex flex-col flex-grow">
                   <div className="flex gap-1 text-accent-primary mb-1">
                     <Star className="fill-current w-3 h-3" /><Star className="fill-current w-3 h-3" /><Star className="fill-current w-3 h-3" /><Star className="fill-current w-3 h-3" /><Star className="fill-current w-3 h-3" />
@@ -455,7 +455,7 @@ export function Home() {
         <div className="flex w-full overflow-x-auto snap-x scrollbar-none pb-4">
           {instagramImages.map((img, idx) => (
             <a key={idx} href="#" className="group relative w-[60vw] md:w-[20vw] flex-shrink-0 snap-center aspect-square overflow-hidden bg-black">
-              <img src={img} alt="Instagram feed" className="w-full h-full object-cover opacity-80 group-hover:opacity-100 group-hover:scale-110 transition-all duration-700" />
+              <img src={img} alt="Instagram feed" className="w-full h-full object-cover object-top opacity-80 group-hover:opacity-100 group-hover:scale-110 transition-all duration-700" />
               <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
                 <InstagramIcon className="w-8 h-8 text-white" />
               </div>

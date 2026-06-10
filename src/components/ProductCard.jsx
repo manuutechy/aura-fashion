@@ -34,14 +34,14 @@ export function ProductCard({ product }) {
             src={product.images && product.images[0] ? product.images[0] : "https://placehold.co/600x800/F8F9FA/D4AF37?text=AURA"}
             alt={product.name}
             loading="lazy"
-            className={`w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105 ${isHovering && product.images && product.images[1] ? 'opacity-0' : 'opacity-100'}`}
+            className={`w-full h-full object-cover object-top transition-transform duration-700 ease-out group-hover:scale-105 ${isHovering && product.images && product.images[1] ? 'opacity-0' : 'opacity-100'}`}
           />
           {product.images && product.images[1] && (
             <img
               src={product.images[1]}
               alt={`${product.name} flat-lay`}
               loading="lazy"
-              className={`absolute inset-0 w-full h-full object-cover transition-all duration-700 ease-out transform ${isHovering ? 'opacity-100 scale-105' : 'opacity-0 scale-100'}`}
+              className={`absolute inset-0 w-full h-full object-cover object-top transition-all duration-700 ease-out transform ${isHovering ? 'opacity-100 scale-105' : 'opacity-0 scale-100'}`}
             />
           )}
         </Link>
